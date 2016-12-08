@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/app.css">
   </head>
 
-<body class="yellow-background-gradient">
+<body class="background-gradient-yellow">
 
 <div class="off-canvas-wrapper">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
