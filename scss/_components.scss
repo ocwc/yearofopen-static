@@ -1,0 +1,82 @@
+.yellow-background-gradient {
+    background-image: radial-gradient(55% 86%, #FFFFFF 33%, #FFE081 99%);
+}
+
+/* Header */
+.header {
+    margin-top: rem-calc(18);
+    margin-bottom: rem-calc(75);
+}
+
+.dropdown.menu {
+    margin-top: rem-calc(33);
+    margin-left: rem-calc(30);
+
+    font-size: rem-calc(17);
+    font-weight: bold;
+}
+
+.dropdown.menu > li:hover > a,
+.dropdown.menu > li:active > a {
+    color: $secondary-color;
+}
+
+.dropdown.menu li.has-submenu:hover,
+.dropdown.menu li.has-submenu:active {
+    background-color: $primary-color;
+
+
+    & > a {
+        color: $white;
+    }
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent:hover>a::after {
+    border-color: $white transparent transparent;
+}
+
+.is-dropdown-submenu {
+    background-color: $primary-color;
+    border: none;
+
+}
+
+.is-dropdown-submenu li {
+    min-width: rem-calc(250);
+}
+
+.is-dropdown-submenu-item a {
+    color: $white;
+}
+
+.is-dropdown-submenu-item:hover a,
+.is-dropdown-submenu-item:active a {
+    background-color: $secondary-color;
+    color: $white;
+}
+
+.logo {
+    margin-left: rem-calc(5);
+    max-width: rem-calc(171);
+}
+
+.logo-container {
+    position: relative;
+    overflow: visible;
+}
+
+.logo-anchor {
+    overflow: visible;
+}
+
+.logo-anchor::after {
+    position: absolute;
+    top: rem-calc(31);
+    right: rem-calc(-25);
+
+    content:"";
+    width: rem-calc(1);
+    height: rem-calc(49);
+    border-right: rem-calc(1) solid #705B3C;
+}
+
