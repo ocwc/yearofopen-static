@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year of Open</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
   </head>
 
@@ -27,7 +27,7 @@
     <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
       <ul class="vertical drilldown menu" data-responsive-menu="drilldown medium-dropdown">
           <li>
-            <a href="#">About</a>
+            <a href="/article.php">About</a>
           </li>
           <li class="has-submenu">
             <a href="#">List Of Events</a>
@@ -53,7 +53,7 @@
           <div class="medium-10 columns">
             <ul class="dropdown menu" data-dropdown-menu>
               <li>
-                <a href="#">About</a>
+                <a href="/article.php">About</a>
               </li>
               <li class="has-submenu">
                 <a href="#">List Of Events</a>
