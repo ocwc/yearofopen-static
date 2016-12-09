@@ -57,6 +57,41 @@
         </div>
     </div>
 
+    <div class="background-gradient-greenLight home-video-content">
+        <div class="row align-center">
+            <div class="column medium-7">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/yA49ybJDkgU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-gradient-blueDark home-cards">
+        <div class="row align-spaced">
+            <div class="column medium-2 home-card home-card-education">
+                <a href="#">Open Education</a>
+            </div>
+            <div class="column medium-2 home-card home-card-access">
+                <a href="#">Open Access</a>
+            </div>
+            <div class="column medium-2 home-card home-card-software">
+                <a href="#">Open Source Software</a>
+            </div>
+            <div class="column medium-2 home-card home-card-licensing">
+                <a href="#">Open Licensing</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-gradient-blue color-white home-social">
+        <div class="row align-center">
+            <div class="medium-10 text-center">
+                <h2>Open Education</h2>
+                <p>Use #yearofopen and join the discussion</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php include('inc/footer.php'); ?>

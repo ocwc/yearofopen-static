@@ -4,6 +4,8 @@ $gold: #705B3C;
 $brown: #f1e4d2;
 $green: #86B94B;
 $violet: #85509D;
+$greenLight: #1CA985;
+$blueDark: #3B52AC;
 
 $arial: Arial,Helvetica Neue,Helvetica,sans-serif;
 
@@ -24,6 +26,18 @@ $arial: Arial,Helvetica Neue,Helvetica,sans-serif;
     background-image: linear-gradient(-180deg, #BB88CC 0%, #85509D 100%);
 }
 
+.background-gradient-greenLight {
+    background-color: $greenLight;
+}
+
+.background-gradient-blueDark {
+    background-color: $blueDark;
+}
+
+.background-gradient-blue {
+    background-image: linear-gradient(0deg, #3B52AC 9%, #5EC7AD 100%);
+}
+
 /* Buttons */
 .button.green {
     @include button-style($green, $secondary-color, $white);
@@ -39,6 +53,20 @@ $arial: Arial,Helvetica Neue,Helvetica,sans-serif;
     border-radius: rem-calc(6);
 }
 
+/* Video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* Header */
 .header {
@@ -182,6 +210,99 @@ $arial: Arial,Helvetica Neue,Helvetica,sans-serif;
 .box-colored p {
     padding: rem-calc(20) rem-calc(30);
     text-align: center;
+}
+
+.home-video-content {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(50);
+}
+
+.home-cards {
+    padding: rem-calc(95) 0;
+}
+
+.home-card {
+    display: table;
+    border-radius: rem-calc(5);
+    min-height: rem-calc(248);
+}
+
+.home-card a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    color: $white;
+    font-size: rem-calc(24);
+    font-weight: 600;
+
+    &:hover,
+    &:active {
+        color: lighten($primary-color, 40%);
+    }
+    text-shadow: 0px 1px $black;
+}
+
+.home-card-education {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(204, 166, 120, 0.62),
+      rgba(204, 166, 120, 0.62)
+    ),
+    /* bottom, image */
+    url('../images/yoo-4.jpg');
+    background-size: cover;
+}
+
+.home-card-access {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(41, 154, 165, 0.62),
+      rgba(41, 154, 165, 0.62)
+    ),
+    /* bottom, image */
+    url('../images/yoo-2.jpg');
+    background-size: cover;
+}
+
+.home-card-software {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(82, 111, 136, 0.62),
+      rgba(82, 111, 136, 0.62)
+    ),
+    /* bottom, image */
+    url('../images/yoo-1.jpg');
+  background-size: cover;
+}
+
+.home-card-licensing {
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(82, 111, 136, 0.62),
+      rgba(82, 111, 136, 0.62)
+    ),
+    /* bottom, image */
+    url('../images/yoo-3.jpg');
+    background-size: cover;
+    background-position: right top;
+}
+
+.home-social {
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(80);
+}
+
+.home-social h2 {
+    display: block;
+    font-size: rem-calc(24);
+    font-weight: 600;
+    text-align: center;
+
 }
 
 /* Text */
